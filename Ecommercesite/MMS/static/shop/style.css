@@ -1,0 +1,17 @@
+/* Styling for the title within a card */
+.card-title {
+    /* Set the color of the text to green */
+    color: green;
+
+    /* Set the font weight to 700 for a bold appearance */
+    font-weight: 700;
+}
+
+/* Styling for the text within a card */
+.card-text {
+    /* Set the color of the text to green */
+    color: green;
+
+    /* Set the font weight to 600 for a slightly bold appearance */
+    font-weight: 600;
+}
