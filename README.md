@@ -25,7 +25,7 @@ Follow these steps to set up the project locally:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/online-store-ecommerce.git
+git clone https://github.com/banothjalandhar/Online-Store-Ecommerce-Project.git
 cd online-store-ecommerce
 
 2. Create a Virtual Environment
