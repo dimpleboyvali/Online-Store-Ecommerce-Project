@@ -4,7 +4,7 @@
 
 #define MAX_BOOKS 100
 
-// Structure to store book details
+
 typedef struct {
     int id;
     char title[100];
@@ -15,7 +15,7 @@ typedef struct {
 Book library[MAX_BOOKS];
 int bookCount = 0;
 
-// Function prototypes
+
 void addBook();
 void displayBooks();
 void searchBook();
@@ -53,7 +53,7 @@ int main() {
     return 0;
 }
 
-// Function to add a book
+
 void addBook() {
     if (bookCount >= MAX_BOOKS) {
         printf("Library is full! Cannot add more books.\n");
@@ -66,11 +66,11 @@ void addBook() {
 
     printf("Enter book title: ");
     fgets(library[bookCount].title, sizeof(library[bookCount].title), stdin);
-    library[bookCount].title[strcspn(library[bookCount].title, "\n")] = '\0'; // Remove newline
+    library[bookCount].title[strcspn(library[bookCount].title, "\n")] = '\0'; 
 
     printf("Enter book author: ");
     fgets(library[bookCount].author, sizeof(library[bookCount].author), stdin);
-    library[bookCount].author[strcspn(library[bookCount].author, "\n")] = '\0'; // Remove newline
+    library[bookCount].author[strcspn(library[bookCount].author, "\n")] = '\0'; 
 
     printf("Enter publication year: ");
     scanf("%d", &library[bookCount].year);
@@ -103,10 +103,10 @@ void searchBook() {
     char searchTitle[100];
     int found = 0;
 
-    getchar(); // Clear newline character
+    getchar(); 
     printf("Enter book title to search: ");
     fgets(searchTitle, sizeof(searchTitle), stdin);
-    searchTitle[strcspn(searchTitle, "\n")] = '\0'; // Remove newline
+    searchTitle[strcspn(searchTitle, "\n")] = '\0'; 
 
     for (int i = 0; i < bookCount; i++) {
         if (strcasecmp(library[i].title, searchTitle) == 0) {
